@@ -1,0 +1,25 @@
+server:
+  port: 9411
+spring:
+  application:
+    name: spring-cloud-zipkin
+  boot:
+    admin:
+      client:
+        url: http://localhost:9001
+  # 解决Zipkin启动The bean 'characterEncodingFilter', defined in
+  main:
+    allow-bean-definition-overriding: true
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:9000/eureka
+  instance:
+    prefer-ip-address: true # 当其它服务获取地址时提供ip而不是hostname
+    ip-address: 127.0.0.1 # 指定自己的ip信息，不指定的话会自己寻找
+management:
+  metrics:
+    web:
+      # 解决Zipkin报错IllegalArgumentException: Prometheus requires that all meters
+      server:
+        auto-time-requests: false

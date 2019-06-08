@@ -1,0 +1,45 @@
+# 这里的配置文件就是zuul网关的配置文件，主要作用是通过spring cloud config让网关动态的加载这个配置文件
+server:
+  port: 8080
+spring:
+  application:
+    name: spring-cloud-zuul
+  boot:
+    admin:
+      client:
+        url: http://localhost:9001
+  zipkin:
+    base-url: http://localhost:9411
+eureka:
+  client:
+    registry-fetch-interval-seconds: 5 # 获取服务列表的周期：5s
+    service-url:
+      defaultZone: http://127.0.0.1:9000/eureka
+  instance:
+    prefer-ip-address: true # 当其它服务获取地址时提供ip而不是hostname
+    ip-address: 127.0.0.1 # 指定自己的ip信息，不指定的话会自己寻找
+zuul:
+  prefix: /api
+  # strip-prefix: false # 不去除前缀
+  routes:
+    spring-cloud-user: /user/**
+    spring-cloud-consumer: /consumer/**
+    # ignored-services: # 忽略服务，不暴露
+    # - spring-cloud-consumer
+    # host:
+    # socket-timeout-millis: 6000
+    # connect-timeout-millis: 6000
+ribbon:
+  ConnectTimeout: 1000 # 连接超时时间(ms)
+  ReadTimeout: 3500 # 通信超时时间(ms)，（ReadTimeout + ConnectTimeout）* 2 < hystrix
+  OkToRetryOnAllOperations: true # 是否对所有操作重试
+  MaxAutoRetriesNextServer: 2 # 同一服务不同实例的重试次数
+  MaxAutoRetries: 1 # 同一实例的重试次数
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 27000 # 设置 hystrix 的超时时间为6000ms
+

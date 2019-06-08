@@ -1,0 +1,37 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: spring-cloud-consumer
+  boot:
+    admin:
+      client:
+        url: http://localhost:9001
+  zipkin:
+    base-url: http://localhost:9411
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:9000/eureka
+  instance:
+    prefer-ip-address: true # 当其它服务获取地址时提供ip而不是hostname
+    ip-address: 127.0.0.1 # 指定自己的ip信息，不指定的话会自己寻找
+feign:
+  hystrix:
+    enabled: true # 开启Feign的熔断功能
+spring-cloud-consumer:
+  ribbon:
+    ConnectTimeout: 2500 # 连接超时时间(ms)
+    ReadTimeout: 2000 # 通信超时时间(ms)
+    OkToRetryOnAllOperations: true # 是否对所有操作重试
+    MaxAutoRetriesNextServer: 1 # 同一服务不同实例的重试次数
+    MaxAutoRetries: 1 # 同一实例的重试次数
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000
+swagger:
+  base-package: cn.tellsea.consumer.web

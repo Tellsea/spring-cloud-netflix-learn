@@ -1,0 +1,10 @@
+# 动态从 spring cloud config 中读取的配置文件
+spring:
+  profiles:
+    active: native
+  cloud:
+    config:
+      uri: http://127.0.0.1:9002
+      name: application-zuul
+      profile: dev
+      # label: master # 分支

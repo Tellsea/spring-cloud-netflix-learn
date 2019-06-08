@@ -1,0 +1,34 @@
+server:
+  port: 9002
+spring:
+  application:
+    name: spring-cloud-config
+  boot:
+    admin:
+      client:
+        url: http://localhost:9001
+  # 获取本地配置文件，本身支持：本地储存、git远程、SVN
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:config/
+  # 远程读取
+#  cloud:
+#    config:
+#      label: master # 配置仓库的分支
+#      server:
+#        git:
+#          uri: https://github.com/xx/spring-cloud-config # 配置Git仓库地址，如果用Github需要加.git，如果用Gitlab则不需要
+#          search-paths: respo # 配置仓库路径
+#          username: # 访问Git仓库的账号
+#          password: # 访问Git仓库的密码
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:9000/eureka
+  instance:
+    prefer-ip-address: true # 当其它服务获取地址时提供ip而不是hostname
+    ip-address: 127.0.0.1 # 指定自己的ip信息，不指定的话会自己寻找
