@@ -1,8 +1,8 @@
 {
-  "name": "vue-admin-template",
+  "name": "spring-cloud-vue",
   "version": "4.2.1",
   "description": "A vue admin template with Element UI & axios & iconfont & permission control & lint",
-  "author": "Pan <panfree23@gmail.com>",
+  "author": "Tellsea <3210054449@qq.com>",
   "license": "MIT",
   "scripts": {
     "dev": "vue-cli-service serve",
