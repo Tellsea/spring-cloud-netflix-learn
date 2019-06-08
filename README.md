@@ -39,14 +39,14 @@ SpringCloud 分布式微服务基础架构采用的是当前官网最新的版�
 
 ## 预览
 
-![在这里插入图片描述](https://github.com/Tellsea/spring-cloud-templete/blob/master/doc/images/1.png)
+![Swagger2 接口文档](https://github.com/Tellsea/spring-cloud-templete/blob/master/doc/images/1.png)
 
-![在这里插入图片描述](https://github.com/Tellsea/spring-cloud-templete/blob/master/doc/images/2.png)
+![Github 更多项目](https://github.com/Tellsea/spring-cloud-templete/blob/master/doc/images/2.png)
 
-![在这里插入图片描述](https://github.com/Tellsea/spring-cloud-templete/blob/master/doc/images/3.png)
+![Eureka 注册中心](https://github.com/Tellsea/spring-cloud-templete/blob/master/doc/images/3.png)
 
-![在这里插入图片描述](https://github.com/Tellsea/spring-cloud-templete/blob/master/doc/images/4.png)
+![Spring Boot Admin](https://github.com/Tellsea/spring-cloud-templete/blob/master/doc/images/4.png)
 
-![在这里插入图片描述](https://github.com/Tellsea/spring-cloud-templete/blob/master/doc/images/5.png)
+![Hystrix 熔断监控](https://github.com/Tellsea/spring-cloud-templete/blob/master/doc/images/5.png)
 
-![在这里插入图片描述](https://github.com/Tellsea/spring-cloud-templete/blob/master/doc/images/6.png)
+![Zipkin 链路追踪](https://github.com/Tellsea/spring-cloud-templete/blob/master/doc/images/6.png)
