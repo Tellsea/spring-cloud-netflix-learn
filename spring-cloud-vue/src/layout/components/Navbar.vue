@@ -16,10 +16,10 @@
               首页
             </el-dropdown-item>
           </router-link>
-          <a target="_blank" href="https://github.com/Tellsea/spring-cloud">
+          <a target="_blank" href="https://github.com/Tellsea/spring-cloud-templete/">
             <el-dropdown-item>Github</el-dropdown-item>
           </a>
-          <a target="_blank" href="https://github.com/Tellsea/spring-cloud">
+          <a target="_blank" href="https://github.com/Tellsea/spring-cloud-templete/">
             <el-dropdown-item>文档</el-dropdown-item>
           </a>
           <el-dropdown-item divided>

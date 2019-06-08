@@ -3,32 +3,32 @@
     <a
       class="document-btn"
       target="_blank"
-      href="https://panjiachen.github.io/vue-element-admin-site/"
+      href="https://github.com/Tellsea/spring-cloud-templete/"
     >Github 参考文档</a>
     <a
       class="document-btn"
       target="_blank"
-      href="https://github.com/PanJiaChen/vue-element-admin/"
+      href="https://github.com/Tellsea/spring-cloud-templete/"
     >源码地址</a>
     <dropdown-menu :items="articleList" style="float:left;margin-left:50px;" title="更多项目" />
   </div>
 </template>
 
 <script>
-  import DropdownMenu from '@/components/Share/DropdownMenu'
+import DropdownMenu from '@/components/Share/DropdownMenu'
 
-  export default {
-    name: 'Github',
-    components: { DropdownMenu },
-    data() {
-      return {
-        articleList: [
-          { title: 'SSM 脚手架实战', href: 'https://github.com/Tellsea/ssm' },
-          { title: 'Spring Boot 框架整合', href: 'https://github.com/Tellsea/springboot-learn' },
-        ]
-      }
+export default {
+  name: 'Github',
+  components: { DropdownMenu },
+  data() {
+    return {
+      articleList: [
+        { title: 'SSM 脚手架实战', href: 'https://github.com/Tellsea/ssm/' },
+        { title: 'Spring Boot 框架整合', href: 'https://github.com/Tellsea/springboot-learn/' },
+      ]
     }
   }
+}
 </script>
 
 <style lang="scss" scoped>
