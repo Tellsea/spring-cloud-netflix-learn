@@ -31,11 +31,9 @@ SpringCloud 分布式微服务基础架构采用的是当前官网最新的版�
 | spring-cloud-config | 9002 | 分布式微服务配置中心 |
 | spring-cloud-zipkin | 9411 | 分布式微服务链路追踪 |
 
-## 交流
-
-- QQ群：957406675
-
-- [Tellsea's blog](http://www.tellsea.cn/)
+## 交流学习
+![在这里插入图片描述](https://github.com/Tellsea/springboot-learn/blob/master/doc/images/emoticon1.jpg)
+![交流学习](https://github.com/Tellsea/springboot-learn/blob/master/doc/images/qq-group.png)
 
 ## 预览
 
