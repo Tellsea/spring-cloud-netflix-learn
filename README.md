@@ -31,10 +31,6 @@ SpringCloud 分布式微服务基础架构采用的是当前官网最新的版�
 | spring-cloud-config | 9002 | 分布式微服务配置中心 |
 | spring-cloud-zipkin | 9411 | 分布式微服务链路追踪 |
 
-## 交流学习
-![在这里插入图片描述](https://github.com/Tellsea/springboot-learn/blob/master/doc/images/emoticon1.jpg)
-![交流学习](https://github.com/Tellsea/springboot-learn/blob/master/doc/images/qq-group.png)
-
 ## 预览
 
 ![Swagger2 接口文档](https://github.com/Tellsea/spring-cloud-templete/blob/master/doc/images/1.png)
@@ -48,3 +44,8 @@ SpringCloud 分布式微服务基础架构采用的是当前官网最新的版�
 ![Hystrix 熔断监控](https://github.com/Tellsea/spring-cloud-templete/blob/master/doc/images/5.png)
 
 ![Zipkin 链路追踪](https://github.com/Tellsea/spring-cloud-templete/blob/master/doc/images/6.png)
+
+## 交流学习
+
+![在这里插入图片描述](https://github.com/Tellsea/springboot-learn/blob/master/doc/images/emoticon1.jpg)
+![交流学习](https://github.com/Tellsea/springboot-learn/blob/master/doc/images/qq-group.png)
