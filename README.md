@@ -1,4 +1,4 @@
-# SpringCloud 分布式微服务项目
+# SpringCloud 微服务案例
 
 springcloud 模块非常多，一个个的学习之后，又涉及了各个模块之间的整合使用，所有这里我整理了一个 springcloud 分布式微服务基础架构，[源码传送门](https://github.com/Tellsea/spring-cloud-templete)，其中涉及的都是springcloud 中的核心模块。
 
