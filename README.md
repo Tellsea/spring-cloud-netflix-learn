@@ -1,5 +1,4 @@
-# SpringCloud 微服务案例
-
+# Spring Cloud Netflix 学习
 springcloud 模块非常多，一个个的学习之后，又涉及了各个模块之间的整合使用，所有这里我整理了一个 springcloud 分布式微服务基础架构，[源码传送门](https://github.com/Tellsea/spring-cloud-templete)，其中涉及的都是springcloud 中的核心模块。
 
 搭建这样一个模块的目标是希望能实现将来实际应用上的分布式微服务脚手架项目，这样一来更能快速的在原有的基础之上，直接进行项目的开发，大量的减少重复的配置。
